@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<!-- Generated 25-dic-2014 20:31:19 by Hibernate Tools 4.0.0 -->
+<hibernate-mapping>
+    <class name="com.balmon.SpringMvcHbXml.model.Alumnos" table="ALUMNOS">
+        <id name="matricula" type="big_decimal">
+            <column name="MATRICULA" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="NOMBRE" length="100" not-null="true" />
+        </property>
+        <property name="app" type="string">
+            <column name="APP" length="100" not-null="true" />
+        </property>
+        <property name="apm" type="string">
+            <column name="APM" length="100" not-null="true" />
+        </property>
+        <property name="edad" type="big_decimal">
+            <column name="EDAD" precision="22" scale="0" not-null="true" />
+        </property>
+        <property name="sexo" type="string">
+            <column name="SEXO" length="50" not-null="true" />
+        </property>
+        <property name="fechaRegistro" type="date">
+            <column name="FECHA_REGISTRO" length="7" not-null="true" />
+        </property>
+        <property name="usuario" type="string">
+            <column name="USUARIO" length="200" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
